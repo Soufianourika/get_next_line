@@ -76,7 +76,7 @@ char	*while_loop(int j, ssize_t bytread, int fd)
 	}
 	if (bytread == 0 && st_buff && (st_buff)[0] != '\0')
 		return (free(buff), helper(st_buff, j));
-	return (free(st_buff), NULL);
+	return ( NULL);
 }
 
 char	*get_next_line(int fd)
